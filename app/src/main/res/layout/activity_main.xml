@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="949dp"
+            android:layout_height="723dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sira_numarasi"
+                android:layout_width="920dp"
+                android:layout_height="696dp"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="400dp" />
+
+            <LinearLayout
+                android:layout_width="776dp"
+                android:layout_height="109dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/sira_giris"
+                    android:layout_width="656dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Sırayı giriniz"
+                    android:inputType="numberSigned"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="50sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="317dp"
+                android:layout_height="692dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                app:layoutManager="LinearLayoutManager"
+                android:background="#FF9800"
+                android:padding="10dp"
+                android:paddingBottom="5dp"
+                android:scrollbars="vertical"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:stackFromEnd="true"
+                app:reverseLayout="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
